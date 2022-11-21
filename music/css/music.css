@@ -1,0 +1,105 @@
+/* 横幅 begin */
+body{
+    background: url(../img/bg.gif) no-repeat;
+    background-size: cover;
+}
+.banner {
+    width: 960px;
+    height: 250px;
+    background: url(../img/14.jpg) no-repeat;
+    margin: 80px;
+    opacity: 0.6;
+    box-shadow: 10px 15px 15px 1px blueviolet;
+    position: relative;
+}
+.banner ul li{
+    list-style: none;
+    float: left;
+    position: absolute;
+}
+.banner ul li img{
+    border: 1px solid green;
+    border-radius: 70%;
+    cursor: pointer;
+}
+.m1{top: 20px; left: 100px;}
+.m2{top: 50px; left: 300px;}
+.m3{top: 100px; left: 100px;}
+.m4{top: 20px; left: 500px;}
+.m5{top: 50px; left: 800px;}
+@keyframes img_rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.banner .img_rotate{
+    animation: img_rotate 5s infinite linear;
+}
+/* 横幅 end */
+
+/* 播放器begin */
+.music{
+    width: 550px;
+    height: 120px;
+    background: black;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px blueviolet;
+
+}
+.music .m_img{
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+.music .m_text{
+    color: white;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.music .m_btn{
+    float: left;
+
+    position: absolute;
+    left: 320px;
+}
+.music .m_btn a{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../img/player_bg.png);
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.music .m_btn .m_prev{background-position: -68px 0px;}
+.music .m_btn .m_prev:hover{background-position: -68px -32px;}
+.music .m_btn .m_play{background-position: -104px -5px;}
+.music .m_btn .m_play:hover{background-position: -104px -47px;}
+.music .m_btn .m_next{background-position: -145px 0px;}
+.music .m_btn .m_next:hover{background-position: -145px -32px;}
+
+.music .m_close{
+    float: right;
+    width: 23px;
+    margin-top: 2px;
+    height: 120px;
+    background: url(../img/player_bg.png);
+    cursor: pointer;
+}
+/* 播放器end */
+
+.music .m_btn .m_pause{background-position: -292px -93px;}
+.music .m_btn .m_pause:hover{background-position: -334px -93px;}
+
+.music .m_open{
+    background-position: -45px 0px;
+}
